@@ -1,0 +1,11 @@
+type Pair {
+  _id: ID
+  open: Float
+  high: Float
+  low: Float
+  close: Float
+  volume: Float
+}
+type Query {
+  pair(name: String): [Pair]
+}

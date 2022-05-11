@@ -1,0 +1,26 @@
+//https://www.mongodb.com/developer/quickstart/node-crud-tutorial/
+//https://www.w3schools.com/nodejs/nodejs_mongodb_query.asp
+https://docs.ccxt.com/en/stable/manual.html#ohlcv-candlestick-charts
+
+npm init
+npm install --save-dev graphpack
+npm i ccxt
+npm i mongodb
+# Make sure to have these 2 lines to scripts in package.json:
+   "dev": "graphpack",
+   "build": "graphpack build" 
+npm run dev
+---------------------------------
+http://localhost:4000/
+query {
+  pair(name: "BTC/USDT") {
+    _id
+    open
+    high
+    low
+    close
+    volume
+  }
+}
+---------------------------------
+node ccxt2db.js
